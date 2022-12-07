@@ -86,47 +86,80 @@ nav a:hover{
 
 /*imagen*/
 .imagen {
-    height: 675px;
-    width: 200px;
-    background-size: cover;
-    display: inline-flex;
+    height: 685px;
+    width: auto;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    
     
     
     
 }
 /*tarjeta*/
+main{
+    background-color: whitesmoke;
+    margin: -5px;
+    padding-left: 80px;
+}
 .bloque {
     display: inline-block;
-    border: 1px solid black;
-    width: 220px;
-    height: 220px;
-    margin: 30px;
-
+    margin: 30px 120px;
+    height: 450px;
+    background-color: antiquewhite;
+    border-radius: 30px;
+    transition: 0.5s;
 }
-.bloque a{
-    background-color: blue;
+.bloque:hover{
+    box-shadow: 0 0 30px black;
+}
+.bloque img{
+    border-radius: 30px;
+    width: 350px;
+    height: 320px;
+    background-size: cover;
+    background-position: center;
+
+    
+    
+    
     
 }
 .bloque h2{
   color: chocolate;
   text-align: center;
+  font-size: 35px;
 }
 .bloque H3{
     color: blueviolet;
     text-align: center;
-    padding: 10px;
+    padding: 30px;
+    text-decoration: underline 2px;
+
 
 }
 /*lo mas vendido*/
 .lomas {
 display: flex;
 justify-content: center;
+color: orange;
+font-size: 25px;
+padding: 20px;
+}
+.lomas h2{
+    margin: 0 20px;
 
 }
 .lomas img{
-    width: 20px;
-    height: 20px;
-    margin: 0 10px;
+    width: 30px;
+    height: 30px;
+    margin: 5px 10px;
+    transition: 0.5s;
+    
+}
+.lomas img:hover{
+    transform: translatey(-5px);
+    transform: rotate(180deg);
 }
 /*lo mas tarjeta*/
 .lomas-tarjeta{
@@ -150,22 +183,24 @@ justify-content: center;
 }
 /*mapa*/
 .mapa{
-    background-color: coral;
-    height: 250px;
-    width: auto;
+    padding: 50px;
     display: flex;
+    justify-content: space-between;
+    
     
 }
 .mapa h2{
-    text-align: center;
     color: darkblue;
 }
-.mapa a{
-    background-color: black;
-    width: 100vh;
+.mapa iframe{
     height: 250px;
-    display: grid;
-    padding: 0 620px;
+    width: 420px;
+    transition: 0.2s;
+}
+.mapa iframe:hover{
+    box-shadow: 0 0 30px orangered;
+    transform: scale(1.2)
+
 }
 /*fotos*/
 .insta img{
