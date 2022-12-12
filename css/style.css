@@ -68,7 +68,6 @@ nav{
     text-align: center;
     background-color: black;
     justify-content: space-evenly;
-    
 }
 nav a{
     text-decoration: none;
@@ -223,10 +222,12 @@ main{
 /*pagina Nuevo*/
 
 .nuevo_h1{
+    font-size: 50px;
     text-align: center;
-    color: blueviolet;
-    padding: 10px;
-    background-color: rgb(25, 0, 44);
+    color: orangered;
+    padding: 5px;
+    background-image: url(/multimedia/ff/descargar\ \(2\).jpg);
+    background-size: contain;
 }
 .nuevo{
     background:linear-gradient(rgb(0, 0, 0),rgb(35, 0, 28));
@@ -269,8 +270,10 @@ main{
 .contenedor-tarjeta{
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
     background-image: url(/multimedia/neonnuevo.jpg);
+    background-size: contain;
+    position: center;
+    
     
 }
 /*pagina top*/
@@ -437,6 +440,63 @@ main{
     
 
 }
+
+/*pagina suscribite*/
+.caja{
+    background-image: url(/multimedia/ff/descargar\ \(1\).jpg);
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    padding: 150px 500px;
+    background-size: contain;
+    background-position-x:center;
+}
+.contenedor_suscribe{
+    background-image: url(/multimedia/P.jpg);
+    background-size: contain;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    padding: 50px;
+
+}
+.contenedor_suscribe h1{
+    color: brown;
+    text-align: center;
+    
+}
+.contenedor_suscribe-1{
+    margin: 15px;
+    color: brown;
+    font-size: 15px;
+}
+.contenedor_suscribe-1 input{
+    border-radius: 3px;
+    margin: 3px;
+    padding: 5px;
+    background-color: whitesmoke;
+    background-color: rgba(255, 255, 255, 0.715);
+    
+}
+.contenedor_suscribe-1 button{
+    padding: 1px 5px;
+    background-color: rgb(169, 169, 169);
+    border: 1px solid brown;
+    margin: 20px 50px;
+    color: brown;
+    border-radius: 5px;
+    transition: 2s;
+}
+.contenedor_suscribe-1 button:hover{
+    box-shadow: 0 0 15px rgb(130, 0, 0);
+    transform: scale(1.1);
+    color: rgb(255, 0, 0);
+}
+.contenedor_suscribe-1 p{
+    margin-top: 10px;
+}
+
+
+
 
 /*responsi*/
 .responsive{
