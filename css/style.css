@@ -74,16 +74,16 @@ nav a{
     color: orangered;
     background-color: black;
     transition: 1s;
-    padding: 0 10px;
+    padding:0 25px;
     
 
 }
 nav a:hover{
-    background:linear-gradient(rgb(36, 0, 69),rgb(35, 0, 28));
-    color: rgb(0, 110, 255);
-    box-shadow: 0 2px 15px rgb(144, 0, 255);
-    border-radius: 5px;
-    transform: translatey(5px) scale(1.5);
+    background-color:rgb(20, 0, 23);
+    color: rgb(255, 0, 115);
+    box-shadow: 0 0 20px rgb(110, 0, 128);
+    border-radius: 2px;
+    transform: scale(1.5) translatey(2px) ;
 }
 
 /*imagen*/
@@ -158,9 +158,8 @@ main{
     padding: 10px;
 }
 .contenedormapa h2{
-    border-radius: 30px;
-    background:linear-gradient(black,rgba(255, 0, 0, 0),rgba(255, 0, 0, 0));
-    color: rgb(255, 255, 255);
+    background:linear-gradient(rgb(255, 255, 255)5%,rgba(255, 255, 255, 0.479)25%,rgba(0, 0, 0, 0)50%);
+    color: orangered;
     text-align: center;
     font-size: 40px;
 }
