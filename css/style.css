@@ -3,6 +3,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*fuentes*/
+@font-face {
+    font-family: acme;
+    src: url(/multimedia/Acme/Acme-Regular.ttf);
+}
+@font-face {
+    font-family: Courgette;
+    src: url(/multimedia/Courgette/Courgette-Regular.ttf);
+}
+@font-face {
+    font-family: JosefinSans;
+    src: url(/multimedia/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: JosefinSans-italic;
+    src: url(/multimedia/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: LaBelleAurore;
+    src: url(/multimedia/La_Belle_Aurore/LaBelleAurore-Regular.ttf);
+}
+@font-face {
+    font-family: Kalam-Regular;
+    src: url(/multimedia/Kalam/Kalam-Regular.ttf);
+}
+@font-face {
+    font-family: TitanOne;
+    src: url(/multimedia/Titan_One/TitanOne-Regular.ttf);
+}
+@font-face {
+    font-family: RubikGemstones;
+    src: url(/multimedia/Rubik_Gemstones/RubikGemstones-Regular.ttf);
+}
 
 /*inicio*/
 
@@ -16,6 +49,7 @@
     justify-content: center;
 }
 .contenedor a{
+    font-family: acme;
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 25px;
@@ -27,13 +61,14 @@
     transform: scale(1.1);
     }
 .contenedor h4{
-    color: aliceblue;
-    font-size: 11px;
+    font-family: Courgette;
+    color: rgb(245, 212, 0);
+    font-size: 12px;
     transform: rotate(-35deg);
-    font-family: cursive;
-    margin-top: 15px;
+    margin: 15px;
 }
 .contenedor input{
+    font-family: Courgette;
     border: 2px solid rgba(0, 0, 0, 0);
     border-radius: 10px;
     transition: 0.5s;
@@ -63,6 +98,7 @@
 /*nav*/
 
 nav{
+    font-family: acme;
     display: flex;
     font-size: 20px;
     text-align: center;
@@ -74,7 +110,7 @@ nav a{
     color: orangered;
     background-color: black;
     transition: 1s;
-    padding:0 25px;
+    padding: 0 5px;
     
 
 }
@@ -83,7 +119,7 @@ nav a:hover{
     color: rgb(255, 0, 115);
     box-shadow: 0 0 20px rgb(110, 0, 128);
     border-radius: 2px;
-    transform: scale(1.5) translatey(2px) ;
+    transform: scale(1.2) translatey(-7px) ;
 }
 
 /*imagen*/
@@ -134,11 +170,13 @@ main{
     
 }
 .bloque h2{
-  color: chocolate;
-  text-align: center;
-  font-size: 35px;
+    font-family: JosefinSans-italic;
+    color: chocolate;
+    text-align: center;
+    font-size: 35px;
 }
 .bloque H3{
+    font-family: acme;
     color: blueviolet;
     text-align: center;
     padding: 30px;
@@ -158,6 +196,7 @@ main{
     padding: 10px;
 }
 .contenedormapa h2{
+    font-family: Courgette;
     background:linear-gradient(rgb(255, 255, 255)5%,rgba(255, 255, 255, 0.479)25%,rgba(0, 0, 0, 0)50%);
     color: orangered;
     text-align: center;
@@ -188,15 +227,24 @@ main{
     transition: 0.5s;
 }
 .logo img:hover{
-    transform: translatey(-5px);
+    transform: translatey(-7px);
 }
 .noso{
     color: rgb(0, 136, 255);
-    font-size: 16px;
-    margin-top: 5px;
+}
+.noso li{
+    font-family: acme;
+    margin: 3px;
     padding-right: 50px;
+    font-size: 16px;
+    transition: 1s;
+}
+.noso li:hover{
+    color: orangered;
+    transform: translatex(10px);
 }
 .suscribite{
+    font-family: acme;
     color: blueviolet;
     text-align: center;
     padding-left: 50px;
@@ -206,6 +254,7 @@ main{
 
 }
 #boton{
+    font-family: acme;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 146, 88);
    font-size: 12px;
@@ -221,19 +270,19 @@ main{
 /*pagina Nuevo*/
 
 .nuevo_h1{
-    font-size: 50px;
-    text-align: center;
-    color: orangered;
-    padding: 5px;
-    background-image: url(/multimedia/ff/descargar\ \(2\).jpg);
-    background-size: contain;
+    display: grid;
+    grid-area: auto;
+    justify-content: center;
+    font-family: acme;
+    color: rgb(255, 0, 115);
+    background:linear-gradient(rgba(255, 255, 255, 0),rgba(10, 10, 10, 0.594),rgb(0, 0, 0));
 }
 .nuevo{
-    background:linear-gradient(rgb(0, 0, 0),rgb(35, 0, 28));
-    color: rgb(0, 110, 255);
-    box-shadow: 0 2px 15px rgb(144, 0, 255);
-    border-radius: 5px;
-    transform: translatey(5px) scale(1.5);
+    background-color:rgb(20, 0, 23);
+    color: rgb(255, 0, 115);
+    box-shadow: 0 0 20px rgb(110, 0, 128);
+    border-radius: 2px;
+    transform: scale(1.2) translatey(-7px) ;
 }
 .contenedor-tarjeta__tarjeta{
     margin: 20px 50px;
@@ -252,11 +301,13 @@ main{
 
 }
 .contenedor-tarjeta__tarjeta h3{
+    font-family: acme;
     color: azure;
     margin: 5px;
 
 }
 .contenedor-tarjeta__tarjeta h2{
+    font-family: JosefinSans-italic;
     color: greenyellow;
 }
 .contenedor-tarjeta__tarjeta img{
@@ -302,11 +353,13 @@ main{
 
 }
 .contenedor-tarjeta__top h3{
+    font-family: acme;
     color: rgb(0, 4, 255);
     margin: 5px;
 
 }
 .contenedor-tarjeta__top h2{
+    font-family: JosefinSans-italic;
     color: rgb(255, 0, 238);
 }
 .contenedor-tarjeta__top img{
@@ -343,11 +396,13 @@ main{
 
 }
 .contenedor-tarjeta__car h3{
+    font-family: acme;
     color: azure;
     margin: 5px;
 
 }
 .contenedor-tarjeta__car h2{
+    font-family: JosefinSans-italic;
     color: rgb(0, 0, 0);
 }
 .contenedor-tarjeta__car img{
@@ -384,11 +439,13 @@ main{
 
 }
 .contenedor-tarjeta__rem h3{
+    font-family: acme;
     color: rgb(166, 0, 255);
     margin: 5px;
 
 }
 .contenedor-tarjeta__rem h2{
+    font-family: JosefinSans-italic;
     color: rgb(255, 255, 255);
 }
 .contenedor-tarjeta__rem img{
@@ -425,11 +482,13 @@ main{
 
 }
 .contenedor-tarjeta__cho h3{
+    font-family: acme;
     color: azure;
     margin: 5px;
 
 }
 .contenedor-tarjeta__cho h2{
+    font-family: JosefinSans-italic;
     color: rgb(255, 0, 238);
 }
 .contenedor-tarjeta__cho img{
