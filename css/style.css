@@ -46,7 +46,7 @@
     display: flex;
     height: 80px;
     padding-top: 15px;
-    justify-content: center;
+    justify-content: space-between;
 }
 .contenedor a{
     font-family: acme;
@@ -115,10 +115,10 @@ nav a{
 
 }
 nav a:hover{
-    background-color:rgb(20, 0, 23);
+    background-color:rgb(110 2 128 / 30%);
     color: rgb(255, 0, 115);
-    box-shadow: 0 0 20px rgb(110, 0, 128);
-    border-radius: 2px;
+    box-shadow: 0 0 20px 5px rgb(110, 0, 128);
+    border-radius: 100px;
     transform: scale(1.2) translatey(-7px) ;
 }
 
@@ -270,25 +270,28 @@ main{
 /*pagina Nuevo*/
 
 .nuevo_h1{
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
     display: grid;
     grid-area: auto;
     justify-content: center;
     font-family: acme;
     color: rgb(255, 0, 115);
-    background:linear-gradient(rgba(255, 255, 255, 0),rgba(10, 10, 10, 0.594),rgb(0, 0, 0));
+    background: linear-gradient(rgb(0 0 0),rgb(0 0 0 / 80%),rgb(0 0 0 / 40%),rgb(0 0 0 / 5%));
 }
 .nuevo{
-    background-color:rgb(20, 0, 23);
+    background-color: rgba(109, 2, 128, 0);
     color: rgb(255, 0, 115);
-    box-shadow: 0 0 20px rgb(110, 0, 128);
-    border-radius: 2px;
-    transform: scale(1.2) translatey(-7px) ;
+    box-shadow: 0 0 20px 5px rgb(110, 0, 128);
+    border-radius: 100px;
+    transform: scale(1.2) translatey(-7px);
 }
 .contenedor-tarjeta__tarjeta{
-    margin: 20px 50px;
-    text-align: center;
+    margin: 20px 40px;
+    height: 420px;
+    width: 285px;
     background-color: rgb(55, 0, 104);
-    height: 400px;
     border-radius: 10px;
     border: 2px solid rgb(55, 0, 104);
     transition: 0.5s;
@@ -304,27 +307,28 @@ main{
     font-family: acme;
     color: azure;
     margin: 5px;
+    text-align: center;
 
 }
 .contenedor-tarjeta__tarjeta h2{
     font-family: JosefinSans-italic;
     color: greenyellow;
+    text-align: center;
 }
 .contenedor-tarjeta__tarjeta img{
     width: 280px;
     height: 320px;
     border-radius: 10px;
-    
-
 }
 .contenedor-tarjeta{
-    display: flex;
-    flex-flow: row wrap;
     background-image: url(/multimedia/neonnuevo.jpg);
     background-size: contain;
-    position: center;
-    
-    
+    background-position: center;
+}
+.tarjetas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;    
 }
 /*pagina top*/
 
@@ -636,7 +640,7 @@ main{
     .contenedor input{
         display: none;
     }
- }
+}
 
 @media(max-width:470px){
     .contenedor{
@@ -667,6 +671,9 @@ main{
     }
 }
 @media(max-width:410px){
+    .nuevo{
+        transform: scale(1.5) translatey(-2px) ;
+    }    
     .contenedor{
         height: 50px;
     }
@@ -680,8 +687,8 @@ main{
         width: 20px;
         height: 20px;
     }
-
     nav a{
         font-size: 7px;
     }
+
 }
