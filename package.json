@@ -1,0 +1,22 @@
+{
+  "name": "proyecto-main",
+  "version": "1.0.0",
+  "description": "NachoBetancud",
+  "main": "index.js",
+  "scripts": {
+    "build-sass":"node-sass --include-path scss scss/main.scss css/estilos.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NachoBeta/Proyecto.git"
+  },
+  "author": "Nacho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NachoBeta/Proyecto/issues"
+  },
+  "homepage": "https://github.com/NachoBeta/Proyecto#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
