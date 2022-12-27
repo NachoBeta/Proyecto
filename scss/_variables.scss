@@ -1,43 +1,16 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-/*fuentes*/
-@font-face {
-    font-family: acme;
-    src: url(/multimedia/Acme/Acme-Regular.ttf);
-}
-@font-face {
-    font-family: Courgette;
-    src: url(/multimedia/Courgette/Courgette-Regular.ttf);
-}
-@font-face {
-    font-family: JosefinSans;
-    src: url(/multimedia/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
-}
-@font-face {
-    font-family: JosefinSans-italic;
-    src: url(/multimedia/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf);
-}
-@font-face {
-    font-family: LaBelleAurore;
-    src: url(/multimedia/La_Belle_Aurore/LaBelleAurore-Regular.ttf);
-}
-@font-face {
-    font-family: Kalam-Regular;
-    src: url(/multimedia/Kalam/Kalam-Regular.ttf);
-}
-@font-face {
-    font-family: TitanOne;
-    src: url(/multimedia/Titan_One/TitanOne-Regular.ttf);
-}
-@font-face {
-    font-family: RubikGemstones;
-    src: url(/multimedia/Rubik_Gemstones/RubikGemstones-Regular.ttf);
+$color-primero:orangered;
+$color-segundo:blueviolet;
+$color-tercero: whitesmoke;
+$color-cuarto:blueviolet;
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0rem;
+    font-weight: 400;
+    line-height: 1.2;
 }
 
-/*inicio*/
+/*INDEX.HTML*/
 
 .contenedor{
     background-image: url(/multimedia/P.jpg);
@@ -48,126 +21,93 @@
     padding-top: 15px;
     justify-content: space-around;
     align-items: stretch;
-}
-.contenedor a{
+    .titulo{
     font-family: acme;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 25px;
+    color: orangered;
+    font-size: 50px;
     padding-left: 5px;
     transition: 1s;
-}
-.contenedor a:hover{
-    color: rgb(255, 94, 0);
-    transform: scale(1.1);
     }
-.contenedor h4{
-    font-family: Courgette;
-    color: rgb(245, 212, 0);
-    font-size: 12px;
-    transform: rotate(-35deg);
-    margin: 15px;
+    .titulo:hover{
+        color: rgb(255, 94, 0);
+        transform: scale(1.1);
+        }
+    .subtitulo{
+        font-family: Courgette;
+        color: rgb(245, 212, 0);
+        font-size: 12px;
+        transform: rotate(-35deg);
+        margin: 15px;
+    }
+    .buscador{
+        font-family: Courgette;
+        border: 2px solid rgba(0, 0, 0, 0);
+        border-radius: 10px;
+        transition: 0.5s;
+        margin: 20px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.295);
+        
+    }
+    .buscador:hover{
+        box-shadow: 0 0 15px rgb(140, 255, 0);
+    }
+    ::placeholder{
+        color: rgb(255, 94, 0);
+    }
+    .carrito{
+        width: 50px;
+        height: 50px;
+        transition: 0.8s;
+    }
+    .carrito:hover{
+        transform: translatey(-9px);
+    }
 }
-.contenedor input{
-    font-family: Courgette;
-    border: 2px solid rgba(0, 0, 0, 0);
-    border-radius: 10px;
-    transition: 0.5s;
-    margin: 20px;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.295);
-    
-}
-.contenedor input:hover{
-    box-shadow: 0 0 15px rgb(140, 255, 0);
-}
-::placeholder{
-    color: rgb(255, 94, 0);
-}
-.contenedor img{
-    width: 50px;
-    height: 50px;
-    transition: 0.8s;
-}
-.contenedor img:hover{
-    transform: translatey(-9px);
 
-}
-.menuhamb{
-    display: none;
-}
-/*nav*/
+/*NAVEGACION*/
+
 .nav{
-    justify-content: space-evenly;
-    background-color: black;
+        justify-content: space-evenly;
+        background-color: black;
+    .link{
+        text-decoration: none;
+        color: orangered;
+        background-color: black;
+        transition: 1s;
+        padding: 0 5px;
+}
+    .link:hover{
+        background-color:rgb(110 2 128 / 30%);
+        color: rgb(255, 0, 115);
+        box-shadow: 0 0 20px 5px rgb(110, 0, 128);
+        border-radius: 100px;
+        transform: scale(1.2) translatey(-7px) ;
+} 
 }
 
-.nav-link{
-    text-decoration: none;
-    color: orangered;
-    background-color: black;
-    transition: 1s;
-    padding: 0 5px;
-}
-.nav-link:hover{
-    background-color:rgb(110 2 128 / 30%);
-    color: rgb(255, 0, 115);
-    box-shadow: 0 0 20px 5px rgb(110, 0, 128);
-    border-radius: 100px;
-    transform: scale(1.2) translatey(-7px) ;
-}
+/*IMAGEN PRINCIPAL*/
 
-/* .navbar {
-    font-family: acme;
-    display: flex;
-    font-size: 20px;
-    text-align: center;
-    background-color: black;
-    justify-content: space-evenly;
-}
-
-nav-link{
-    text-decoration: none;
-    color: orangered;
-    background-color: black;
-    transition: 1s;
-    padding: 0 5px;
-}
-nav-link:hover{
-    background-color:rgb(110 2 128 / 30%);
-    color: rgb(255, 0, 115);
-    box-shadow: 0 0 20px 5px rgb(110, 0, 128);
-    border-radius: 100px;
-    transform: scale(1.2) translatey(-7px) ;
-} */
-/*globales*/ 
-
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-    margin-bottom: 0rem;
-    font-weight: 400;
-    line-height: 1.2;
-}
-
-/*imagen*/
 .imagen-principal {
     display: flex;
     flex-direction: column;
     align-items: stretch;
 }
-.imagen img{
+img{
     height: 600px;
     width: 1300px;
     background-size: auto; 
 }
-/*tarjeta*/
+
+/*CARDS*/
+
 main{
     background-image: url(/multimedia/P.jpg);
     background-attachment: fixed;
     background-size:contain;
     
 }
-.bloque_section{
+.cards{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -178,13 +118,10 @@ main{
     border-radius: 30px;
     transition: 0.5s;
     margin: 50px 100px;
-    
-    
-}
-.bloque:hover{
+:hover{
     box-shadow: 0 0 30px rgb(255, 255, 255);
 }
-.bloque img{
+img{
     border-radius: 30px;
     width: 300px;
     height: 320px;
@@ -196,22 +133,20 @@ main{
     
     
 }
-.bloque h2{
+h2{
     font-family: JosefinSans-italic;
     color: chocolate;
     text-align: center;
     font-size: 35px;
 }
-.bloque H3{
+H3{
     font-family: acme;
     color: blueviolet;
     text-align: center;
     padding: 30px;
     text-decoration: underline 2px;
-
-
 }
-/*lo mas vendido*/
+}
 
 /*mapa*/
 .contenedormapa{
@@ -222,19 +157,19 @@ main{
     display: flex;
     padding: 10px;
 }
-.contenedormapa h2{
+.contenedor{
     font-family: Courgette;
     background:linear-gradient(rgb(255, 255, 255)5%,rgba(255, 255, 255, 0.479)25%,rgba(0, 0, 0, 0)50%);
     color: orangered;
     text-align: center;
     font-size: 40px;
 }
-.mapa iframe{
+iframe{
     height: 250px;
     width: 420px;
     transition: 1s;
 }
-.mapa iframe:hover{
+iframe:hover{
     box-shadow: 0 0 30px rgb(255, 0, 0);
     transform: scale(1.2)
 
@@ -299,6 +234,7 @@ p{
     background-color: brown;
     border-color: brown;
 }
+
 /*pagina Nuevo*/
 
 .nuevo_h1{
