@@ -46,7 +46,8 @@
     display: flex;
     height: 80px;
     padding-top: 15px;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: stretch;
 }
 .contenedor a{
     font-family: acme;
@@ -96,25 +97,19 @@
     display: none;
 }
 /*nav*/
-
-nav{
-    font-family: acme;
-    display: flex;
-    font-size: 20px;
-    text-align: center;
-    background-color: black;
+.nav{
     justify-content: space-evenly;
+    background-color: black;
 }
-nav a{
+
+.nav-link{
     text-decoration: none;
     color: orangered;
     background-color: black;
     transition: 1s;
     padding: 0 5px;
-    
-
 }
-nav a:hover{
+.nav-link:hover{
     background-color:rgb(110 2 128 / 30%);
     color: rgb(255, 0, 115);
     box-shadow: 0 0 20px 5px rgb(110, 0, 128);
@@ -122,11 +117,43 @@ nav a:hover{
     transform: scale(1.2) translatey(-7px) ;
 }
 
-/*imagen*/
-.imagen {
+/* .navbar {
+    font-family: acme;
     display: flex;
-    justify-content: center;
-    
+    font-size: 20px;
+    text-align: center;
+    background-color: black;
+    justify-content: space-evenly;
+}
+
+nav-link{
+    text-decoration: none;
+    color: orangered;
+    background-color: black;
+    transition: 1s;
+    padding: 0 5px;
+}
+nav-link:hover{
+    background-color:rgb(110 2 128 / 30%);
+    color: rgb(255, 0, 115);
+    box-shadow: 0 0 20px 5px rgb(110, 0, 128);
+    border-radius: 100px;
+    transform: scale(1.2) translatey(-7px) ;
+} */
+/*globales*/ 
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+/*imagen*/
+.imagen-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 .imagen img{
     height: 600px;
@@ -219,15 +246,18 @@ main{
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    height: auto;
 }
-.logo img{
-    width: 50px;
-    height: 50px;
-    margin: 5px 20px;
-    transition: 0.5s;
+.bi{
+    font-size: 50px;
+    margin: 50px;
+    transition: 1s;
+    color: #9d03f7;
+    
+
 }
-.logo img:hover{
-    transform: translatey(-7px);
+.bi:hover{
+    color:#e70d75;
 }
 .noso{
     color: rgb(0, 136, 255);
@@ -235,7 +265,6 @@ main{
 .noso li{
     font-family: acme;
     margin: 3px;
-    padding-right: 50px;
     font-size: 16px;
     transition: 1s;
 }
@@ -247,18 +276,21 @@ main{
     font-family: acme;
     color: blueviolet;
     text-align: center;
-    padding-left: 50px;
 }
 .suscribite h2{
     color:  rgb(0, 136, 255);
 
+}
+p{
+    margin-top: 0;
+    margin-bottom: 0rem;
 }
 #boton{
     font-family: acme;
     color: rgb(255, 255, 255);
     background-color: rgb(0, 146, 88);
     font-size: 12px;
-    padding: 1px 10px;
+    padding: 1px 20px;
     border-radius: 10px;
     transition: 1s;
     border-color: rgb(0, 146, 88);
@@ -504,6 +536,10 @@ main{
 }
 
 /*pagina suscribite*/
+
+.carousel-item img{
+    border-radius: 50px;
+}
 .caja{
     background-image: url(/multimedia/ff/descargar\ \(1\).jpg);
     height: 700px;
@@ -611,7 +647,7 @@ main{
         font-size: 12px;
         padding-right: 5px;
     }
-    .logo img{
+    .logo i{
         width: 30px;
         height: 30px;
         margin: 10px 10px;
@@ -643,6 +679,9 @@ main{
 }
 
 @media(max-width:470px){
+    .nav-link{
+        font-size: 10PX;
+    }
     .contenedor{
         height: 50px;
     }
@@ -690,5 +729,7 @@ main{
     nav a{
         font-size: 7px;
     }
+
+
 
 }
