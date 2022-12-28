@@ -42,8 +42,11 @@
 /*HEADER*/
 .contenedor {
   background-image: url(/scss/vistas/multimedia/background-head.jpg);
-  display: flex; }
+  display: flex;
+  justify-content: space-between;
+  height: 80px; }
   .contenedor__titulo {
+    text-decoration: none;
     font-family: acme;
     color: orangered;
     font-size: 50px;
@@ -57,7 +60,7 @@
     color: #f5d400;
     font-size: 12px;
     transform: rotate(-35deg);
-    margin: 15px; }
+    margin: 25px; }
   .contenedor__buscador {
     font-family: Courgette;
     border: 2px solid rgba(0, 0, 0, 0);
@@ -81,7 +84,8 @@
 /*NAVBAR*/
 .nav-contenedor {
   justify-content: space-evenly;
-  background-color: black; }
+  background-color: black;
+  display: flex; }
   .nav-contenedor__pestañas-link {
     text-decoration: none;
     color: orangered;
@@ -113,14 +117,18 @@
   background-color: whitesmoke; }
   .tarjeta_contenedor .tarjeta {
     margin: 50px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.427);
     border-radius: 35px; }
     .tarjeta_contenedor .tarjeta__cuerpo {
       text-align: center; }
       .tarjeta_contenedor .tarjeta__cuerpo-titulo {
+        font-size: 30px;
         color: red; }
       .tarjeta_contenedor .tarjeta__cuerpo-texto {
-        color: blue; }
+        margin: 30px 10px;
+        color: black; }
+      .tarjeta_contenedor .tarjeta__cuerpoa {
+        margin: 20px; }
     .tarjeta_contenedor .tarjeta .card-img-top {
       border-radius: 30px; }
 

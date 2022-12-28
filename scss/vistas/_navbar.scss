@@ -2,6 +2,7 @@
 .nav-contenedor{
     justify-content: space-evenly;
     background-color: black;
+    display: flex;
 
     &__pestañas{
         &-link{

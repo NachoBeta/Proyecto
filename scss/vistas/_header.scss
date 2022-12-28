@@ -1,9 +1,10 @@
 .contenedor{
     background-image: url(/scss/vistas/multimedia/background-head.jpg);
     display: flex;
-    
-    
+    justify-content: space-between;
+    height: 80px;
     &__titulo{
+        text-decoration: none;
         font-family: acme;
         color: orangered;
         font-size: 50px;
@@ -21,7 +22,7 @@
         color: rgb(245, 212, 0);
         font-size: 12px;
         transform: rotate(-35deg);
-        margin: 15px;
+        margin: 25px;
     }
     &__buscador{
         font-family: Courgette;
