@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*fuentes*/
+@font-face {
+    font-family: acme;
+    src: url(/scss/vistas/multimedia/Acme/Acme-Regular.ttf);
+}
+@font-face {
+    font-family: Courgette;
+    src: url(/scss/vistas/multimedia/Courgette/Courgette-Regular.ttf);
+}
+@font-face {
+    font-family: JosefinSans;
+    src: url(/scss/vistas/multimedia/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: JosefinSans-italic;
+    src: url(/scss/vistas/multimedia/Josefin_Sans/JosefinSans-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: LaBelleAurore;
+    src: url(/scss/vistas/multimedia/La_Belle_Aurore/LaBelleAurore-Regular.ttf);
+}
+@font-face {
+    font-family: Kalam-Regular;
+    src: url(/scss/vistas/multimedia/Kalam/Kalam-Regular.ttf);
+}
+@font-face {
+    font-family: TitanOne;
+    src: url(/scss/vistas/multimedia/Titan_One/TitanOne-Regular.ttf);
+}
+@font-face {
+    font-family: RubikGemstones;
+    src: url(/scss/vistas/multimedia/Rubik_Gemstones/RubikGemstones-Regular.ttf);
+}

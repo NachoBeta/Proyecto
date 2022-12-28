@@ -1,4 +1,17 @@
-@import './global';
-
-@import './variables';
-
+/*GLOBAL*/
+@import "./vistas/global";
+/*INDEX-HTML*/
+/*HEADER*/
+@import "./vistas/heder";
+/*NAVBAR*/
+@import "./vistas/navbar";
+/*IMAGEN-PRINCIPAL*/
+@import "./vistas/imagen-principal";
+/*TARJETAS*/
+@import "./vistas/tarjetas";
+/*CARRUSEL*/
+@import "./vistas/carrusel";
+/*TARJETAS-INSTAGRAM*/
+@import "./vistas/tarjetas-instagram";
+/*FOOTER*/
+@import "./vistas/footer";

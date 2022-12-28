@@ -1,0 +1,13 @@
+.carrusel_contenedor{
+
+    &-titulo{
+        color: greenyellow;
+        text-align: center;
+        background-color: chocolate;
+    }
+
+    .carouselExampleInterval{
+        border-radius: 50px;
+        background-color: black;
+    }
+}

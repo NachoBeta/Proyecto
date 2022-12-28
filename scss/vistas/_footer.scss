@@ -1,0 +1,25 @@
+.footer{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-image: url(/scss/vistas/multimedia/foter-img.jpg);
+    background-size: contain;
+    &__suscribite{
+        text-align: center;
+        &-titulo{
+            font-family: acme;
+            color: greenyellow;
+        }
+        &-subtitulo{
+            color: blueviolet;
+        }
+        &-boton{
+            color: red;
+        }
+    }
+    &__logo a{
+        font-size: 50px;
+        padding: 20px 30px;
+    }
+
+}
