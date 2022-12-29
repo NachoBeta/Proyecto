@@ -18,5 +18,5 @@
   "homepage": "https://github.com/NachoBeta/Proyecto#readme",
   "devDependencies": {
     "node-sass": "^8.0.0"
-}
+  }
 }

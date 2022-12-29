@@ -6,18 +6,16 @@
 
     &__pestañas{
         &-link{
-            text-decoration: none;
             color: orangered;
-            background-color: black;
             transition: 1s;
-            padding: 0 5px;
+            font-size: 15px;
+            font-family: 'JosefinSans';
+            font-weight: 100;
 
             &:hover{
-                background-color:red;
-                color: pink;
-                box-shadow: 0 0 20px 5px black;
-                border-radius: 100px;
-                transform: scale(1.2) translatey(-7px) ;
+                background-color: aqua;
+                
+                box-shadow: 0 0 20px red;
             }
         }
         
