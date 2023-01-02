@@ -2,12 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: whitesmoke;
-
+    background-image: url(/scss/vistas/multimedia/backgrounds/backgrounds-4.jpg);
+    background-size: contain;
     .tarjeta{
         margin: 50px;
-        background-color: rgba(0, 0, 0, 0.427);
+        background-image: linear-gradient(to right, #fd0d8e26, #0000ff00,#fd0d8e26);
         border-radius: 35px;
+        border-color: 10px solid black;
 
         &__cuerpo{
             text-align: center;
@@ -28,6 +29,7 @@
 
     .card-img-top{
         border-radius: 30px;
+        height: 320px;
     }
     }
 }

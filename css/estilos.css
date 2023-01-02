@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*GLOBAL*/
+@import url("./vistas/__variables.scss");
 * {
   margin: 0;
   padding: 0;
@@ -40,6 +41,13 @@
 
 a {
   text-decoration: none; }
+
+ol,
+ul,
+dl {
+  list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: 0rem; }
 
 /*INDEX-HTML*/
 /*HEADER*/
@@ -93,20 +101,22 @@ a {
       transform: translateY(-8px); }
 
 /*NAVBAR*/
-/*NAVBAR*/
 .nav-contenedor {
   justify-content: space-evenly;
   background-color: black;
   display: flex; }
   .nav-contenedor__pestañas-link {
     color: orangered;
-    transition: 1s;
     font-size: 15px;
     font-family: 'JosefinSans';
-    font-weight: 100; }
+    font-weight: 100;
+    margin-bottom: 10rem;
+    transition: 1.2s;
+    padding: 2px 2px 0px 2px; }
     .nav-contenedor__pestañas-link:hover {
-      background-color: aqua;
-      box-shadow: 0 0 20px red; }
+      color: yellow;
+      border: 1px solid #b4cd32;
+      box-shadow: 0px 0px 25px yellowgreen; }
 
 /*IMAGEN-PRINCIPAL*/
 .imagen-principal {
@@ -123,11 +133,13 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  background-color: whitesmoke; }
+  background-image: url(/scss/vistas/multimedia/backgrounds/backgrounds-4.jpg);
+  background-size: contain; }
   .tarjeta_contenedor .tarjeta {
     margin: 50px;
-    background-color: rgba(0, 0, 0, 0.427);
-    border-radius: 35px; }
+    background-image: linear-gradient(to right, #fd0d8e26, #0000ff00, #fd0d8e26);
+    border-radius: 35px;
+    border-color: 10px solid black; }
     .tarjeta_contenedor .tarjeta__cuerpo {
       text-align: center; }
       .tarjeta_contenedor .tarjeta__cuerpo-titulo {
@@ -139,7 +151,8 @@ a {
       .tarjeta_contenedor .tarjeta__cuerpoa {
         margin: 20px; }
     .tarjeta_contenedor .tarjeta .card-img-top {
-      border-radius: 30px; }
+      border-radius: 30px;
+      height: 320px; }
 
 /*CARRUSEL*/
 .carrusel_contenedor-titulo {
@@ -192,3 +205,5 @@ a {
   .footer__logo a {
     font-size: 50px;
     padding: 20px 30px; }
+
+/*VARIABLES*/

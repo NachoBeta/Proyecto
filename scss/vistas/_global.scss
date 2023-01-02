@@ -39,3 +39,10 @@
 a{
     text-decoration: none;
 }
+ol,
+ul,
+dl {
+    list-style-type: none;
+    margin-top: 0px;
+    margin-bottom: 0rem;
+}
