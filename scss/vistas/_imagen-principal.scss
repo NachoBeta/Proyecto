@@ -4,8 +4,8 @@
     align-items: stretch;
 
     &__img{
-        height: 600px;
-        width: 1300px;
-        background-size: auto;
+        height: 100%;
+        width: 100%;
+        --bs-gutter-x: 0rem;
     }
 }

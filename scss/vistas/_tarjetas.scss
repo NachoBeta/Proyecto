@@ -2,34 +2,52 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-image: url(/scss/vistas/multimedia/backgrounds/backgrounds-4.jpg);
+    background-image: url(/scss/vistas/multimedia/backgrounds/backgrounds-8.jpg);
+    background-attachment: fixed;
     background-size: contain;
     .tarjeta{
-        margin: 50px;
-        background-image: linear-gradient(to right, #fd0d8e26, #0000ff00,#fd0d8e26);
+        margin: 80px;
+        background-image: url(/scss/vistas/multimedia/backgrounds/backgrounds-2.jpg);
+        background-size: cover;
+        background-position: center;
         border-radius: 35px;
-        border-color: 10px solid black;
+        transition: 1s;
+
+        &:hover{
+            box-shadow: 0 0 50px 12px blueviolet;
+        }
 
         &__cuerpo{
             text-align: center;
 
             &-titulo{
                 font-size: 30px;
-                color: red;
-                
+                color: #ffc107;
+                font-family: 'LaBelleAurore';
+                margin-top: 10px;
             }
             &-texto{
-                margin: 30px 10px;
-                color: rgb(0, 0, 0);
+                padding: 0px 20px 0px 20px;
+                color: whitesmoke;
+                margin-bottom: 0rem;
+                font-family: "Kalam-Regular";
             }
-            &a{
-                margin: 20px;
+            .btn-warning{
+                font-family: 'acme';
+                margin: 20px 30px;
+                transition: 1s;
+                &:hover{
+                    color: black;
+                    background-color: #ffc107;
+                    border-color: #ffc107;
+                    box-shadow: #f44336 0px 0px 15px 5px;
+                }
             }
         }
 
     .card-img-top{
         border-radius: 30px;
-        height: 320px;
+        height: 340px;
     }
     }
 }

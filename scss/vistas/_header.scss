@@ -52,6 +52,12 @@
         transition: 1s;
         &:hover{
             transform:translateY(-8px);
+            border: 1px solid #bfff0000;
+        }
+        &:active{
+            border: 1px solid red;
+            color: red;
+            font-family: "acme";
         }
     }
 }
