@@ -2,16 +2,22 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    background-image: url(/scss/vistas/multimedia/foter-img.jpg);
-    background-size: contain;
+    background-image: url(/scss/vistas/multimedia/backgrounds/backgrounds-1.jpg);
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 30px;
+
     &__suscribite{
         text-align: center;
+
         &-titulo{
             font-family: acme;
             color: greenyellow;
+            margin-bottom: -5px;
         }
         &-subtitulo{
             color: blueviolet;
+            margin-bottom: 2px;
         }
         &-boton{
             color: red;
@@ -19,7 +25,22 @@
     }
     &__logo a{
         font-size: 50px;
-        padding: 20px 30px;
+    padding: 0px 40px;
+    color: #607d8b;
+    transition: 1s;
+
+    &:hover{
+        color: greenyellow;
+        transform: scale(2,2);
+    }
+    }
+    &__nosotros{
+        color: greenyellow;
+        font-family: "acme";
+        font-size: 1.2rem;
+        &-li{
+            padding: 2px;
+        }
     }
 
 }

@@ -1,10 +1,15 @@
 .seguinos__instagram{
     &-titulo{
-        color: red;
+        color: greenyellow;
         text-align: center;
-        background-color: yellowgreen;
-        font-size: 2.5rem;
-        padding: 5px 0px;
+        background-color: chocolate;
+        margin-bottom: 0rem;
+        font-family: "ACME";
+        font-size: 27px;
+        letter-spacing: 6px;
+        padding-top: 4px;
+        border-top: 2px solid darkkhaki;
+        border-bottom: 2px solid darkkhaki;
     }
     &__tarjeta{
         display: flex;
