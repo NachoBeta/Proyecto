@@ -15,16 +15,38 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        background-color: whitesmoke;
         text-align: center;
-        background-size: contain;   
+        background-size: cover;   
+        background-image: url(/scss/vistas/multimedia/backgrounds/back.jpg);
+
+        &__contenedor{
+            margin: 30px;
+            padding: 10px 30px;
+            border-radius: 10px;
+
+            &-subtitulo{
+                font-family: "Courgette";
+                font-size: 3rem;
+                letter-spacing: 1px;
+                -webkit-text-fill-color: #e91e63;
+                -webkit-text-stroke: 1px lightpink;
+            }
+
+            &-parrafo{
+                font-family: "Kalam-Regular";
+                color: mediumseagreen;
+                font-size: 15px;
+            }
+        }
+
 
         &-card-img-top{
-            border-radius: 30px;
+            border-radius: 40px;
             height: 17rem;
             margin: 20px;
+            transition: 0.5s;
         &:hover{
-            box-shadow: 0 0 20px 20px black;
+            box-shadow: 0 0 30px 10px #e91e63;
         }
     }   
     }  

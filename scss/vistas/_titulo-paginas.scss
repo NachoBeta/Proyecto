@@ -1,0 +1,13 @@
+.contenedor_Nuevo{
+    background-image: url(/scss/vistas/multimedia/neonnuevo.jpg);
+    text-align: center;
+    background-position: center;
+    margin-bottom: -8px;
+
+    &-titulo{
+        font-family: 'acme';
+        font-size: 50px;
+        letter-spacing: 5px;
+        color: yellow;
+    }
+}
