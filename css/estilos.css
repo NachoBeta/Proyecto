@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/*GLOBAL*/
 * {
   margin: 0;
   padding: 0;
@@ -48,8 +47,11 @@ dl {
   margin-top: 0px;
   margin-bottom: 0rem; }
 
-/*INDEX-HTML*/
-/*HEADER*/
+#active-pag {
+  color: yellow;
+  border: 1px solid #b4cd32;
+  box-shadow: 0px 0px 25px yellowgreen; }
+
 .header__container {
   background-image: url(/scss/vistas/multimedia/background-head.jpg);
   background-size: auto;
@@ -104,7 +106,6 @@ dl {
       color: red;
       font-family: "acme"; }
 
-/*NAVBAR*/
 .nav-contenedor {
   justify-content: space-evenly;
   background-color: black;
@@ -127,7 +128,6 @@ dl {
 body {
   line-height: inherit; }
 
-/*IMAGEN-PRINCIPAL*/
 .imagen-principal {
   display: flex;
   flex-direction: column;
@@ -137,7 +137,6 @@ body {
     width: 100%;
     --bs-gutter-x: 0rem; }
 
-/*TARJETAS*/
 .tarjeta_contenedor {
   display: flex;
   flex-wrap: wrap;
@@ -180,7 +179,6 @@ body {
       border-radius: 30px;
       height: 340px; }
 
-/*CARRUSEL*/
 .carrusel_contenedor-titulo {
   color: greenyellow;
   text-align: center;
@@ -197,7 +195,6 @@ body {
   border-radius: 50px;
   background-color: black; }
 
-/*TARJETAS-INSTAGRAM*/
 .seguinos__instagram-titulo {
   color: greenyellow;
   text-align: center;
@@ -239,7 +236,6 @@ body {
     .seguinos__instagram__tarjeta-card-img-top:hover {
       box-shadow: 0 0 30px 10px #e91e63; }
 
-/*FOOTER*/
 .footer {
   display: flex;
   flex-wrap: nowrap;
@@ -247,7 +243,8 @@ body {
   background-image: url(/scss/vistas/multimedia/backgrounds/backgrounds-1.jpg);
   align-items: center;
   padding-left: 20px;
-  padding-right: 30px; }
+  padding-right: 30px;
+  border-top: 1px solid orangered; }
   .footer__suscribite {
     text-align: center; }
     .footer__suscribite-titulo {
@@ -274,16 +271,70 @@ body {
     .footer__nosotros-li {
       padding: 2px; }
 
-/*TITULOS-PAGINAS*/
-.contenedor_Nuevo {
-  background-image: url(/scss/vistas/multimedia/neonnuevo.jpg);
-  text-align: center;
-  background-position: center;
-  margin-bottom: -8px; }
-  .contenedor_Nuevo-titulo {
-    font-family: 'acme';
-    font-size: 50px;
-    letter-spacing: 5px;
-    color: yellow; }
+.card-header-pills {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px; }
+  .card-header-pills-img {
+    height: 30px; }
 
-/*VARIABLES*/
+.contenedor-tarjetas_nuevo {
+  background-image: url(/scss/vistas/multimedia/backgrounds/backgrounds-12.jpg);
+  background-size: contain;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.card-body {
+  width: 18rem;
+  height: 14rem;
+  padding: 0px;
+  background-image: url(../vistas/multimedia/backgrounds/backgrounds-9.jpg); }
+
+p {
+  margin-bottom: 0rem; }
+
+.nav-precios__antes {
+  color: lightslategray;
+  text-decoration: line-through; }
+
+.nav-precios__ahora {
+  font-size: 20px;
+  color: blueviolet; }
+
+.nav-precios__boton {
+  margin: 1rem;
+  transition: 1s; }
+  .nav-precios__boton:hover {
+    box-shadow: 0 0 20px 10px greenyellow;
+    color: orangered; }
+
+.card-title {
+  color: orangered;
+  font-family: "Kalam-Regular";
+  margin-top: 3px; }
+
+.card-subtitulo {
+  color: greenyellow;
+  text-decoration: underline;
+  font-family: "Courgette"; }
+
+.card-texto {
+  font-family: "Courgette"; }
+
+.nav img {
+  height: 20rem;
+  width: 15rem;
+  border-radius: 10px; }
+
+.card-header:first-child {
+  background-color: #ff000000;
+  margin: -1px; }
+
+.text-center {
+  background-image: url(/scss/vistas/multimedia/backgrounds/backgrounds-11.jpg);
+  background-size: contain;
+  margin: 40px 15px 40px 15px; }

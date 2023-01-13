@@ -1,0 +1,285 @@
+// HEADER//
+.header__container {
+    background-image: url(/scss/vistas/multimedia/background-head.jpg);
+    background-size: auto;
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+    height: 5rem;
+    align-content: space-around;
+    justify-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &-titulo{
+        margin-top: 2rem;
+        color: $color1;
+        font-family: acme;
+        font-size: 3rem;
+        transition: 1s;
+        padding-right: 90px;
+        &:hover{
+            color: whitesmoke;
+            transform: scale(1.2);
+        }
+    }
+    &-subtitulo{
+        color: yellow;
+        font-family: Courgette;
+        font-size: 15px;
+        transform: rotate(347deg);
+        text-align: end;
+        margin-top: 14px;
+        margin-right: 29px;
+    }
+    &-buscador{
+        height: 2rem;
+        width: auto;
+        border-radius: 20px;
+        border-color: rgba(0, 0, 0, 0);
+        background-color: rgba(128, 128, 128, 0.288);
+        transition: 1s;
+        &::placeholder{
+            color: orangered;
+            text-align: center;
+            font-family: Courgette;
+        }
+        &:hover{
+            box-shadow: 0 0 20px 5px greenyellow;
+        }
+    }
+    &-carrito{
+        height: 5rem;
+        transition: 1s;
+        &:hover{
+            transform:translateY(-8px);
+            border: 1px solid #bfff0000;
+        }
+        &:active{
+            border: 1px solid red;
+            color: red;
+            font-family: "acme";
+        }
+    }
+}
+// NAVBAR //
+.nav-contenedor{
+    justify-content: space-evenly;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    border-top: 1px ridge red;
+    border-bottom: 1px ridge red;
+    height: 26px;
+
+    &__pestañas{
+        &-link{
+            color: orangered;
+            font-size: 15px;
+            font-family: 'JosefinSans';
+            transition: 1s;
+            padding: 3px 10px 0px 10px;
+            position: sticky;
+
+            &:hover{
+                color: yellow;
+                border: 1px solid #b4cd32;
+                box-shadow: 0px 0px 25px yellowgreen;
+            }
+        }
+        
+    }
+    
+}
+body {
+    line-height: inherit;
+}
+// IMAGEN-PRINCIPAL//
+.imagen-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    &__img{
+        height: 100%;
+        width: 100%;
+        --bs-gutter-x: 0rem;
+    }
+}
+// TARJETAS//
+.tarjeta_contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-image: url(/scss/vistas/multimedia/backgrounds/backgrounds-9.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+    .tarjeta{
+        margin: 80px;
+        background-image: url(/scss/vistas/multimedia/backgrounds/backgrounds-4.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 35px;
+        transition: 1s;
+        border:4px solid darkkhaki;
+
+        &:hover{
+            box-shadow: 0 0 50px 12px darkkhaki;
+        }
+
+        &__cuerpo{
+            text-align: center;
+
+            &-titulo{
+                font-size: 30px;
+                color: #ffc107;
+                font-family: 'LaBelleAurore';
+                margin-top: 10px;
+            }
+            &-texto{
+                padding: 0px 20px 0px 20px;
+                color: black;
+                margin-bottom: 0rem;
+                font-family: "Kalam-Regular";
+            }
+            .btn-warning{
+                font-family: 'acme';
+                margin: 20px 30px;
+                transition: 1s;
+                &:hover{
+                    color: black;
+                    background-color: #ffc107;
+                    border-color: #ffc107;
+                    box-shadow: #f44336 0px 0px 15px 5px;
+                }
+            }
+        }
+
+    .card-img-top{
+        border-radius: 30px;
+        height: 340px;
+    }
+    }
+}
+// CARRUSEL //
+.carrusel_contenedor{
+
+    &-titulo{
+        color: greenyellow;
+        text-align: center;
+        background-color: chocolate;
+        margin-bottom: 0rem;
+        font-family: "ACME";
+        font-size: 27px;
+        letter-spacing: 6px;
+        padding-top: 4px;
+        border-top: 2px solid darkkhaki;
+        border-bottom: 2px solid darkkhaki;
+    }
+
+    .carouselExampleInterval{
+        border-radius: 50px;
+        background-color: black;
+    }
+}
+// TARJETAS-INSTAGRAM //
+.seguinos__instagram{
+    &-titulo{
+        color: greenyellow;
+        text-align: center;
+        background-color: chocolate;
+        margin-bottom: 0rem;
+        font-family: "ACME";
+        font-size: 27px;
+        letter-spacing: 6px;
+        padding-top: 4px;
+        border-top: 2px solid darkkhaki;
+        border-bottom: 2px solid darkkhaki;
+    }
+    &__tarjeta{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-align: center;
+        background-size: cover;   
+        background-image: url(/scss/vistas/multimedia/backgrounds/back.jpg);
+
+        &__contenedor{
+            margin: 30px;
+            padding: 10px 30px;
+            border-radius: 10px;
+
+            &-subtitulo{
+                font-family: "Courgette";
+                font-size: 3rem;
+                letter-spacing: 1px;
+                -webkit-text-fill-color: #e91e63;
+                -webkit-text-stroke: 1px lightpink;
+            }
+
+            &-parrafo{
+                font-family: "Kalam-Regular";
+                color: mediumseagreen;
+                font-size: 15px;
+            }
+        }
+
+
+        &-card-img-top{
+            border-radius: 40px;
+            height: 17rem;
+            margin: 20px;
+            transition: 0.5s;
+        &:hover{
+            box-shadow: 0 0 30px 10px #e91e63;
+        }
+    }   
+    }  
+}
+// FOOTER //
+.footer{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-image: url(/scss/vistas/multimedia/backgrounds/backgrounds-1.jpg);
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 30px;
+    border-top: 1px solid $color1;
+
+    &__suscribite{
+        text-align: center;
+
+        &-titulo{
+            font-family: acme;
+            color: greenyellow;
+            margin-bottom: -5px;
+        }
+        &-subtitulo{
+            color: blueviolet;
+            margin-bottom: 2px;
+        }
+        &-boton{
+            color: red;
+        }
+    }
+    &__logo a{
+        font-size: 50px;
+    padding: 0px 40px;
+    color: #607d8b;
+    transition: 1s;
+
+    &:hover{
+        color: $color2;
+        transform: scale(2,2);
+    }
+    }
+    &__nosotros{
+        color: $color2;
+        font-family: "acme";
+        font-size: 1.2rem;
+        &-li{
+            padding: 2px;
+        }
+    }
+
+}

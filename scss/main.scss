@@ -1,21 +1,8 @@
-/*GLOBAL*/
-@import "./vistas/global";
-/*INDEX-HTML*/
-/*HEADER*/
-@import "./vistas/header";
-/*NAVBAR*/
-@import "./vistas/navbar";
-/*IMAGEN-PRINCIPAL*/
-@import "./vistas/imagen-principal";
-/*TARJETAS*/
-@import "./vistas/tarjetas";
-/*CARRUSEL*/
-@import "./vistas/carrusel";
-/*TARJETAS-INSTAGRAM*/
-@import "./vistas/tarjetas-instagram";
-/*FOOTER*/
-@import "./vistas/footer";
-/*TITULOS-PAGINAS*/
-@import "./vistas/titulo-paginas";
-/*VARIABLES*/
+// VARIABLES //
 @import "./vistas/variables";
+// GLOBAL //
+@import "./vistas/global";
+// INDEX-HTML //
+@import "./vistas/index";
+// NUEVO-HTML //
+@import "./vistas/nuevo";

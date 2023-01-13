@@ -1,0 +1,75 @@
+.card-header-pills{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    padding:0px;
+
+    &-img{
+        height: 30px;
+    }
+}
+.contenedor-tarjetas_nuevo{
+    background-image: url(/scss/vistas/multimedia/backgrounds/backgrounds-12.jpg);
+    background-size: contain;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card-body{
+    width: 18rem;
+    height: 14rem;
+    padding: 0px;
+    background-image: url(../vistas/multimedia/backgrounds/backgrounds-9.jpg);
+}
+p{
+    margin-bottom: 0rem;
+}
+.nav-precios{
+    
+    &__antes{
+        color: lightslategray;
+        text-decoration: line-through;
+    }
+    &__ahora{
+        font-size: 20px;
+        color: blueviolet;
+    }
+    &__boton{
+        margin: 1rem;
+        transition: 1s;
+        &:hover{
+            box-shadow: 0 0 20px 10px $color2;
+            color: $color1;
+        }
+    }
+}
+.card-title{
+    color: $color1;
+    font-family: "Kalam-Regular";
+    margin-top: 3px;
+}
+.card-subtitulo{
+    color: $color2;
+    text-decoration: underline;
+    font-family: "Courgette";
+}
+.card-texto{
+    font-family: "Courgette";
+
+}
+.nav img{
+    height: 20rem;
+    width: 15rem;
+    border-radius: 10px;
+}
+.card-header:first-child{
+    background-color: #ff000000;
+    margin: -1px;
+}
+.text-center {
+    background-image: url(/scss/vistas/multimedia/backgrounds/backgrounds-11.jpg);
+    background-size: contain;
+    margin: 40px 15px 40px 15px;
+}
