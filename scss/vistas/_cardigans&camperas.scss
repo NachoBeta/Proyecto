@@ -2,9 +2,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url(/scss/vistas/multimedia/backgrounds/backgrounds-14.jpg);
+    background-image: url(/scss/vistas/multimedia/backgrounds/backgrounds-19.jpg);
     background-size: contain;
     background-repeat: revert;
+    
 }
 
 .contenedorTarjetaG{
@@ -17,6 +18,10 @@
     border-radius: 30px;
     overflow: hidden;
     margin: 30px;
+    transition: 1s;
+    &:hover{
+        box-shadow: 0 0 50px -5px blueviolet;
+    }
 
     &-titulo{
 
@@ -61,8 +66,6 @@
 }
 .contenedorinterno{
     width: 100%;
-}
-.form-check{
 }
 .btn{
     font-family: "JosefinSans";

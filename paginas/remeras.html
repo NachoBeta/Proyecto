@@ -2,82 +2,457 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
+    <title>Darko Sweaters-Remeras</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="./multimedia/favic.png" type="image/x-icon">
-    <title>REMERAS</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="shortcut icon" href="../scss/vistas/multimedia/favic.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../css/estilos.css" />
 </head>
 <body>
-    <header>
-        <div class="contenedor">
-            <a href="./index.html"><h1>DARKO SWETERS</h1></a>
-            <H4>BY MAURO SERGIO</H4>
-            <input type="email" placeholder="Buscar">
-            <img src="./multimedia/carrito.png" alt="carrito"><a href="./multimedia/shopping-cart_icon-icons.com_72552.png"></a>
-        </div>
-        <nav>
-            <a href="./nuevo.html"><ol>NUEVO</ol></a>
-            <a href="./top.html"><ol>TOP</ol></a>
-            <a href="./cardigans.html"><ol>CARDIGANS&CAMPERAS</ol></a>
-            <a class="nuevo" href="./remeras.html"><ol>REMERAS</ol></a>
-            <a href="./chombas.html"><ol>CHOMBAS</ol></a>
-        </nav>
-        <h1 class="nuevo_h1">REMERAS</h1>
-    </header>
-
-    <main>
-        <section class="contenedor-tarjeta-rem">
-        <div class="contenedor-tarjeta__rem">
-            <img src="./multimedia/nuevo1.jpg" alt="">
-            <h3>Cárdigan Aracar</h3>
-            <h2>$PRECIO</h2>
-        </div>
-        <div class="contenedor-tarjeta__rem">
-            <img src="./multimedia/nuevo10.jpg" alt="">
-            <h3>Sweater Helecho</h3>
-            <h2>$PRECIO</h2>
-        </div>
-        <div class="contenedor-tarjeta__rem">
-            <img src="./multimedia/nuevo8.jpg" alt="">
-            <h3>Remerón Pier</h3>
-            <h2>$PRECIO</h2>
-        </div>
-        <div class="contenedor-tarjeta__rem">
-            <img src="./multimedia/nuevo6.jpg" alt="">
-            <h3>Musculosa Clavel</h3>
-            <h2>$PRECIO</h2>
-        </div>
-        <div class="contenedor-tarjeta__rem">
-            <img src="./multimedia/nuevo12.jpg" alt="">
-            <h3>Saco Adela</h3>
-            <h2>$PRECIO</h2>
-        </div>
-        <div class="contenedor-tarjeta__rem">
-            <img src="./multimedia/nuevo3.jpg" alt="">
-            <h3>Sweater Menta</h3>
-            <h2>$PRECIO</h2>
-        </div>
+    <div class="conteiner-xl">
+        <header>
+            <!-- ENCABEZADO -->
+            <div class="header__container">
+                <a href="../index.html"><h1 class="header__container-titulo">DARKO SWEATERS</h1><H4 class="header__container-subtitulo">BY MAURO SERGIO</H4></a>
+                <input class="header__container-buscador" type="text" placeholder="Buscar">
+                <img class="header__container-carrito" src="../scss/vistas/multimedia/carrito.png" alt="carrito"><a href="./multimedia/shopping-cart_icon-icons.com_72552.png"></a>
+            </div>
+            <!-- NAV-BAR -->
+            <ul class="nav-contenedor">
+                <li class="nav-contenedor__pestañas">
+                    <a class="nav-contenedor__pestañas-link" href=".nuevo.html">NUEVO</a>
+                <li class="nav-contenedor__pestañas">
+                    <a class="nav-contenedor__pestañas-link" href="./top.html">TOP</a>
+                <li class="nav-contenedor__pestañas">
+                    <a class="nav-contenedor__pestañas-link" href="./cardigans.html">CARDIGANS&CAMPERAS</a>
+                <li class="nav-contenedor__pestañas">
+                    <a class="nav-contenedor__pestañas-link" id="active-pag" href="./remeras.html">REMERAS</a>
+                <li class="nav-contenedor__pestañas">
+                    <a class="nav-contenedor__pestañas-link" href="./chombas.html">CHOMBAS</a>
+            </ul>
+            <!-- TARJETA-GRANDE -->
+            <section class="tarjetagrande">
+            <div class="contenedorTarjetaG">
+                <img src="../scss/vistas/multimedia/insta-1.jpg" alt="">
+                <div class="contenedorinterno">
+                <div class="contenedorTarjetaG-titulo">
+                    <h4 class="contenedorTarjetaG-titulo__titulo">NOMBRE</h4>
+                </div>
+                <div class="contenedorTarjetaG-talles">
+                    <h5 class="contenedorTarjetaG-talles__titulo">TALLES</h5>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">S</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">M</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+                    <label class="form-check-label" for="inlineRadio3">L (Sin Stock)</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">XL</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">XXL</label>
+                  </div>
+                  <div class="contenedorTarjetaG-colores">
+                    <h5 class="contenedorTarjetaG-colores__titulo">COLORES</h5>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsP" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Naranja</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsP" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Celeste</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsP" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Gris</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsP" id="inlineRadio3" value="option3" disabled>
+                    <label class="form-check-label" for="inlineRadio3">Rosa (Sin Stock)</label>
+                  </div>
+                  <div class="contenedorTarjetaG-precio">
+                    <h5 class="contenedorTarjetaG-precio__precio">$3200</h5>
+                  </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-success" type="button">Agregar Al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedorTarjetaG">
+                <img src="../scss/vistas/multimedia/insta-1.jpg" alt="">
+                <div class="contenedorinterno">
+                <div class="contenedorTarjetaG-titulo">
+                    <h4 class="contenedorTarjetaG-titulo__titulo">NOMBRE</h4>
+                </div>
+                <div class="contenedorTarjetaG-talles">
+                    <h5 class="contenedorTarjetaG-talles__titulo">TALLES</h5>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">S</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">M</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+                    <label class="form-check-label" for="inlineRadio3">L (Sin Stock)</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">XL</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">XXL</label>
+                  </div>
+                  <div class="contenedorTarjetaG-colores">
+                    <h5 class="contenedorTarjetaG-colores__titulo">COLORES</h5>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsP" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Naranja</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsP" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Celeste</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsP" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Gris</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsP" id="inlineRadio3" value="option3" disabled>
+                    <label class="form-check-label" for="inlineRadio3">Rosa (Sin Stock)</label>
+                  </div>
+                  <div class="contenedorTarjetaG-precio">
+                    <h5 class="contenedorTarjetaG-precio__precio">$3200</h5>
+                  </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-success" type="button">Agregar Al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedorTarjetaG">
+                <img src="../scss/vistas/multimedia/insta-1.jpg" alt="">
+                <div class="contenedorinterno">
+                <div class="contenedorTarjetaG-titulo">
+                    <h4 class="contenedorTarjetaG-titulo__titulo">NOMBRE</h4>
+                </div>
+                <div class="contenedorTarjetaG-talles">
+                    <h5 class="contenedorTarjetaG-talles__titulo">TALLES</h5>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">S</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">M</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+                    <label class="form-check-label" for="inlineRadio3">L (Sin Stock)</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">XL</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">XXL</label>
+                  </div>
+                  <div class="contenedorTarjetaG-colores">
+                    <h5 class="contenedorTarjetaG-colores__titulo">COLORES</h5>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsP" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Naranja</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsP" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Celeste</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsP" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Gris</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsP" id="inlineRadio3" value="option3" disabled>
+                    <label class="form-check-label" for="inlineRadio3">Rosa (Sin Stock)</label>
+                  </div>
+                  <div class="contenedorTarjetaG-precio">
+                    <h5 class="contenedorTarjetaG-precio__precio">$3200</h5>
+                  </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-success" type="button">Agregar Al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedorTarjetaG">
+                <img src="../scss/vistas/multimedia/insta-1.jpg" alt="">
+                <div class="contenedorinterno">
+                <div class="contenedorTarjetaG-titulo">
+                    <h4 class="contenedorTarjetaG-titulo__titulo">NOMBRE</h4>
+                </div>
+                <div class="contenedorTarjetaG-talles">
+                    <h5 class="contenedorTarjetaG-talles__titulo">TALLES</h5>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">S</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">M</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+                    <label class="form-check-label" for="inlineRadio3">L (Sin Stock)</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">XL</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">XXL</label>
+                  </div>
+                  <div class="contenedorTarjetaG-colores">
+                    <h5 class="contenedorTarjetaG-colores__titulo">COLORES</h5>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsP" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Naranja</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsP" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Celeste</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsP" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Gris</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsP" id="inlineRadio3" value="option3" disabled>
+                    <label class="form-check-label" for="inlineRadio3">Rosa (Sin Stock)</label>
+                  </div>
+                  <div class="contenedorTarjetaG-precio">
+                    <h5 class="contenedorTarjetaG-precio__precio">$3200</h5>
+                  </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-success" type="button">Agregar Al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedorTarjetaG">
+                <img src="../scss/vistas/multimedia/insta-1.jpg" alt="">
+                <div class="contenedorinterno">
+                <div class="contenedorTarjetaG-titulo">
+                    <h4 class="contenedorTarjetaG-titulo__titulo">NOMBRE</h4>
+                </div>
+                <div class="contenedorTarjetaG-talles">
+                    <h5 class="contenedorTarjetaG-talles__titulo">TALLES</h5>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">S</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">M</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+                    <label class="form-check-label" for="inlineRadio3">L (Sin Stock)</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">XL</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">XXL</label>
+                  </div>
+                  <div class="contenedorTarjetaG-colores">
+                    <h5 class="contenedorTarjetaG-colores__titulo">COLORES</h5>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsP" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Naranja</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsP" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Celeste</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsP" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Gris</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsP" id="inlineRadio3" value="option3" disabled>
+                    <label class="form-check-label" for="inlineRadio3">Rosa (Sin Stock)</label>
+                  </div>
+                  <div class="contenedorTarjetaG-precio">
+                    <h5 class="contenedorTarjetaG-precio__precio">$3200</h5>
+                  </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-success" type="button">Agregar Al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedorTarjetaG">
+                <img src="../scss/vistas/multimedia/insta-1.jpg" alt="">
+                <div class="contenedorinterno">
+                <div class="contenedorTarjetaG-titulo">
+                    <h4 class="contenedorTarjetaG-titulo__titulo">NOMBRE</h4>
+                </div>
+                <div class="contenedorTarjetaG-talles">
+                    <h5 class="contenedorTarjetaG-talles__titulo">TALLES</h5>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">S</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">M</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+                    <label class="form-check-label" for="inlineRadio3">L (Sin Stock)</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">XL</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">XXL</label>
+                  </div>
+                  <div class="contenedorTarjetaG-colores">
+                    <h5 class="contenedorTarjetaG-colores__titulo">COLORES</h5>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsP" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Naranja</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsP" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Celeste</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsP" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Gris</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsP" id="inlineRadio3" value="option3" disabled>
+                    <label class="form-check-label" for="inlineRadio3">Rosa (Sin Stock)</label>
+                  </div>
+                  <div class="contenedorTarjetaG-precio">
+                    <h5 class="contenedorTarjetaG-precio__precio">$3200</h5>
+                  </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-success" type="button">Agregar Al Carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="contenedorTarjetaG">
+                <img src="../scss/vistas/multimedia/insta-1.jpg" alt="">
+                <div class="contenedorinterno">
+                <div class="contenedorTarjetaG-titulo">
+                    <h4 class="contenedorTarjetaG-titulo__titulo">NOMBRE</h4>
+                </div>
+                <div class="contenedorTarjetaG-talles">
+                    <h5 class="contenedorTarjetaG-talles__titulo">TALLES</h5>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">S</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">M</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+                    <label class="form-check-label" for="inlineRadio3">L (Sin Stock)</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">XL</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">XXL</label>
+                  </div>
+                  <div class="contenedorTarjetaG-colores">
+                    <h5 class="contenedorTarjetaG-colores__titulo">COLORES</h5>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsP" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">Naranja</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsP" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Celeste</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsP" id="inlineRadio2" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Gris</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptionsP" id="inlineRadio3" value="option3" disabled>
+                    <label class="form-check-label" for="inlineRadio3">Rosa (Sin Stock)</label>
+                  </div>
+                  <div class="contenedorTarjetaG-precio">
+                    <h5 class="contenedorTarjetaG-precio__precio">$3200</h5>
+                  </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-success" type="button">Agregar Al Carrito</button>
+                    </div>
+                </div>
+            </div>
         </section>
-    </main>
-    
+
+
+
+    </div>
+
 </body>
 <footer>
     <section class="footer">
-        <div class="suscribite">
-            <h2>SUSCRIBETE"</h2>
-            <p>y recibi 10% en todas tus compras</p>
-            <a href="./suscribite.html"><button id="boton" >Suscribite</button></a>
+        <div class="footer__suscribite">
+            <h2 class="footer__suscribite-titulo">"SUSCRIBETE"</h2>
+            <p class="footer__suscribite-subtitulo">y recibi 10% en todas tus compras</p>
+            <a class="footer__suscribite-boton" href="./suscribite.html"><button id="boton" >Suscribite</button></a>
         </div>
-        <div class="logo">
-            <a href=""><img src="./multimedia/instagram.png" alt="intragam"></a>
-            <a href=""><img src="/multimedia/facebook.png" alt="faceboock"></a>
-            <a href=""><img src="./multimedia/Whatsapp.png" alt="whatsapp"></a>
+        <div class="footer__logo">
+            <a href="https://www.instagram.com/maurosergiotejidos/?hl=es"><i class="bi bi-instagram"></i></a>
+            <a href="https://es-la.facebook.com/MauroSergioFabrica/"><i class="bi bi-facebook"></i></a>
+            <a href="https://wa.me/542613335724?text=HOLA%20%C2%BFQuer%C3%ADa%20Hacerte%20Una%20Consulta?"><i class="bi bi-whatsapp"></i></a>
         </div>
-        <div class="noso">
-                <li>Quienes Somos</li>
-                <li>Sobre Envios</li>
-                <li>Politica de Cambios</li>
+        <div class="footer__nosotros">
+            <li class="footer__nosotros-li">QUIENES SOMOS</li>
+            <li class="footer__nosotros-li">SOBRE ENVIOS</li>
+            <li class="footer__nosotros-li">POLITICA DE CAMBIOS</li>
         </div>
     </section>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 </html>

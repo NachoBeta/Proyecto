@@ -1,0 +1,41 @@
+.contenedor-tarjeta-cho{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-image: url(/multimedia/neonchombas.jpg);
+    background-size: contain;
+    background-position: center;
+}
+.contenedor-tarjeta__cho{
+    margin: 20px 50px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    height: 400px;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    transition: 0.5s;
+    
+    
+}
+.contenedor-tarjeta__cho:hover{
+    box-shadow: 0 0 30px rgb(255, 0, 238);
+    
+
+}
+.contenedor-tarjeta__cho h3{
+    font-family: acme;
+    color: azure;
+    margin: 5px;
+
+}
+.contenedor-tarjeta__cho h2{
+    font-family: JosefinSans-italic;
+    color: rgb(255, 0, 238);
+}
+.contenedor-tarjeta__cho img{
+    width: 280px;
+    height: 320px;
+    border-radius: 10px;
+    
+
+}

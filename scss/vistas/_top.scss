@@ -1,0 +1,31 @@
+.contenedor__paginaTop{
+    display: flex;
+    background: url(/scss/vistas/multimedia/backgrounds/backgrounds-21.jpg);
+    background-position: center;
+    background-size: inherit;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    &-titulo{
+        font-family: "TitanOne";
+        letter-spacing: 1px;
+        -webkit-text-fill-color: #ff0065;
+        -webkit-text-stroke: 1px black;
+        font-size: 50px;
+        margin-bottom: 0;
+        padding: 0px 100%;
+        background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    }
+}
+.contenedor-tarjetas_top{
+    background-image: url(/scss/vistas/multimedia/backgrounds/backgrounds-21.jpg);
+    background-size: inherit;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

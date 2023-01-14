@@ -1,0 +1,46 @@
+.contenedor-cuerpo{
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contenedor_suscribite{
+    background-color: bisque;
+    border: 1px solid;
+    border-radius: 15px;
+    text-align: center;
+    height: 33rem;
+    width: 28rem;
+    margin-top: 4rem;
+    padding: 5px 20px 5px 20px;
+    overflow: hidden;
+    &-titulo{
+        height: 60px;
+        font-size: xxx-large;
+        font-family: "acme";
+        color: orangered;
+    }
+}
+.col{
+    margin-top: 30px;
+
+    .form-control{
+        background-color: rgba(0, 0, 0, 0.299);
+        font-family: "acme";
+        border: none;
+        border-radius: 10px;
+    }
+
+}
+.contenedor_email{
+    margin-top: 30px;
+
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    align-content: flex-end;
+    justify-content: center;
+    
+}
