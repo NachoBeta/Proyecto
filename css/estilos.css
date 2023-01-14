@@ -271,6 +271,25 @@ body {
     .footer__nosotros-li {
       padding: 2px; }
 
+.contenedor__paginaNuev {
+  display: flex;
+  background-image: url(/scss/vistas/multimedia/backgrounds/backgrounds-15.jpg);
+  background-position: center;
+  background-size: inherit;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center; }
+  .contenedor__paginaNuev-titulo {
+    font-family: "TitanOne";
+    letter-spacing: 1px;
+    -webkit-text-fill-color: #ff0065;
+    -webkit-text-stroke: 1px black;
+    font-size: 50px;
+    margin-bottom: 0;
+    padding: 0px 100%;
+    background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%); }
+
 .card-header-pills {
   display: flex;
   flex-wrap: nowrap;
@@ -281,8 +300,9 @@ body {
     height: 30px; }
 
 .contenedor-tarjetas_nuevo {
-  background-image: url(/scss/vistas/multimedia/backgrounds/backgrounds-12.jpg);
-  background-size: contain;
+  background-image: url(/scss/vistas/multimedia/backgrounds/backgrounds-15.jpg);
+  background-size: inherit;
+  background-position: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -338,3 +358,56 @@ p {
   background-image: url(/scss/vistas/multimedia/backgrounds/backgrounds-11.jpg);
   background-size: contain;
   margin: 40px 15px 40px 15px; }
+
+.tarjetagrande {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(/scss/vistas/multimedia/backgrounds/backgrounds-14.jpg);
+  background-size: contain;
+  background-repeat: revert; }
+
+.contenedorTarjetaG {
+  text-align: center;
+  background-image: url(/scss/vistas/multimedia/backgrounds/backgrounds-17.png);
+  display: flex;
+  height: 320px;
+  width: 45rem;
+  border: 1px solid black;
+  border-radius: 30px;
+  overflow: hidden;
+  margin: 30px; }
+  .contenedorTarjetaG-titulo__titulo {
+    font-family: "Courgette";
+    color: orangered;
+    font-size: 2rem;
+    padding-top: 2rem;
+    letter-spacing: 10px; }
+  .contenedorTarjetaG-talles__titulo {
+    font-family: "Kalam-Regular";
+    color: blueviolet;
+    font-size: 25px;
+    margin-top: 10px; }
+  .contenedorTarjetaG-precio {
+    font-family: "LaBelleAurore";
+    color: lightseagreen;
+    margin-top: 10px; }
+    .contenedorTarjetaG-precio__precio {
+      font-size: 35px;
+      margin-bottom: 0px; }
+  .contenedorTarjetaG-colores__titulo {
+    font-family: "Kalam-Regular";
+    color: lightsalmon;
+    font-size: 25px;
+    margin-top: 10px; }
+
+.contenedorinterno {
+  width: 100%; }
+
+.btn {
+  font-family: "JosefinSans";
+  transition: 1s; }
+  .btn:hover {
+    color: black;
+    box-shadow: 0 0 50px -5px blueviolet;
+    background-color: cadetblue; }

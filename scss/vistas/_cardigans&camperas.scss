@@ -1,0 +1,75 @@
+.tarjetagrande{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/scss/vistas/multimedia/backgrounds/backgrounds-14.jpg);
+    background-size: contain;
+    background-repeat: revert;
+}
+
+.contenedorTarjetaG{
+    text-align: center;
+    background-image: url(/scss/vistas/multimedia/backgrounds/backgrounds-17.png);
+    display: flex;
+    height: 320px;
+    width: 45rem;
+    border: 1px solid black;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 30px;
+
+    &-titulo{
+
+        &__titulo{
+            font-family: "Courgette";
+            color: $color1;
+            font-size: 2rem;
+            padding-top: 2rem;
+            letter-spacing: 10px;
+        }
+    }
+    &-talles{
+        
+
+        &__titulo{
+            font-family: "Kalam-Regular";
+            color: blueviolet;
+            font-size: 25px;
+            margin-top: 10px;
+        }
+    }
+    &-precio{
+        font-family: "LaBelleAurore";
+        color: lightseagreen;
+        margin-top: 10px;
+        &__precio{
+            font-size: 35px;
+            margin-bottom: 0px;
+
+        }
+    }
+    &-colores{
+        &__titulo{
+            font-family: "Kalam-Regular";
+            color: lightsalmon;
+            font-size: 25px;
+            margin-top: 10px;
+
+        }
+    }
+
+}
+.contenedorinterno{
+    width: 100%;
+}
+.form-check{
+}
+.btn{
+    font-family: "JosefinSans";
+    transition: 1s;
+    &:hover{
+        color: black;
+        box-shadow: 0 0 50px -5px blueviolet;
+        background-color: cadetblue;
+    }
+}
