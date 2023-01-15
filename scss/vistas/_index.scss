@@ -128,11 +128,14 @@ body {
 
         &__cuerpo{
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
             &-titulo{
                 font-size: 30px;
                 color: #ffc107;
-                font-family: 'LaBelleAurore';
+                font-family: 'JosefinSans';
                 margin-top: 10px;
             }
             &-texto{
@@ -206,10 +209,11 @@ body {
         &__contenedor{
             margin: 30px;
             padding: 10px 30px;
-            border-radius: 10px;
+            border-radius: 15px;
+            background-color: #00000030;
 
             &-subtitulo{
-                font-family: "Courgette";
+                font-family: "TitanOne";
                 font-size: 3rem;
                 letter-spacing: 1px;
                 -webkit-text-fill-color: #e91e63;
@@ -217,9 +221,9 @@ body {
             }
 
             &-parrafo{
-                font-family: "Kalam-Regular";
-                color: mediumseagreen;
-                font-size: 15px;
+                font-family: 'acme';
+                color: #ffffff;
+                font-size: 20px;
             }
         }
 
@@ -253,13 +257,24 @@ body {
             font-family: acme;
             color: greenyellow;
             margin-bottom: -5px;
+            font-size: xx-large;
         }
         &-subtitulo{
             color: blueviolet;
             margin-bottom: 2px;
         }
         &-boton{
-            color: red;
+            background-color: #258aa8;
+            padding: 0 12px;
+            border: none;
+            border-radius: 20px;
+            font-family: 'Kalam-Regular';
+            color: white;
+            margin-top: 6px;
+            transition: 1s;
+            &:hover{
+                box-shadow: 0 0 20px 10px blueviolet;
+            }
         }
     }
     &__logo a{
