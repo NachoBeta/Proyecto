@@ -320,7 +320,8 @@ body {
     margin: 30px;
     padding: 10px 30px;
     border-radius: 15px;
-    background-color: #00000030; }
+    background-color: #00000030;
+    width: 100%; }
     .seguinos__instagram__tarjeta__contenedor-subtitulo {
       font-family: "TitanOne";
       font-size: 3rem;
@@ -425,7 +426,10 @@ body {
   width: 18rem;
   height: 14rem;
   padding: 0px;
-  background-image: url(../vistas/multimedia/backgrounds/backgrounds-9.jpg); }
+  background-image: url(../vistas/multimedia/backgrounds/backgrounds-9.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
 p {
   margin-bottom: 0rem; }
@@ -436,7 +440,7 @@ p {
 
 .nav-precios__ahora {
   font-size: 20px;
-  color: blueviolet; }
+  color: #390ca3; }
 
 .nav-precios__boton {
   margin: 1rem;
@@ -448,12 +452,14 @@ p {
 .card-title {
   color: orangered;
   font-family: "Kalam-Regular";
-  margin-top: 3px; }
+  margin-top: 3px;
+  margin-bottom: 0px; }
 
 .card-subtitulo {
-  color: greenyellow;
+  color: #a22fff;
   text-decoration: underline;
-  font-family: "Courgette"; }
+  font-family: "Courgette";
+  font-size: 25px; }
 
 .card-texto {
   font-family: "Courgette"; }

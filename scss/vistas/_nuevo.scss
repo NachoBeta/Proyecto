@@ -49,6 +49,9 @@
     height: 14rem;
     padding: 0px;
     background-image: url(../vistas/multimedia/backgrounds/backgrounds-9.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 p{
     margin-bottom: 0rem;
@@ -61,7 +64,7 @@ p{
     }
     &__ahora{
         font-size: 20px;
-        color: blueviolet;
+        color: rgb(57, 12, 163);
     }
     &__boton{
         margin: 1rem;
@@ -76,11 +79,13 @@ p{
     color: $color1;
     font-family: "Kalam-Regular";
     margin-top: 3px;
+    margin-bottom: 0px;
 }
 .card-subtitulo{
-    color: $color2;
+    color: #a22fff;
     text-decoration: underline;
     font-family: "Courgette";
+    font-size: 25px;
 }
 .card-texto{
     font-family: "Courgette";
