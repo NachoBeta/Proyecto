@@ -1,6 +1,6 @@
 // HEADER//
 .header__container {
-    background-image: url(/scss/vistas/multimedia/background-head.jpg);
+    background-image: url(/scss/vistas/multimedia/backgrounds/background-header.jpg);
     background-size: auto;
     display: flex;
     align-items: center;
@@ -12,12 +12,11 @@
     flex-direction: row;
     flex-wrap: wrap;
     &-titulo{
-        margin-top: 2rem;
-        color: $color1;
+        color: #ff008d;
         font-family: acme;
-        font-size: 3rem;
+        font-size: 50PX;
         transition: 1s;
-        padding-right: 90px;
+        padding-right: 5rem;
         &:hover{
             color: whitesmoke;
             transform: scale(1.2);
@@ -26,10 +25,10 @@
     &-subtitulo{
         color: yellow;
         font-family: Courgette;
-        font-size: 15px;
-        transform: rotate(347deg);
+        font-size: 17px;
+        transform: rotate(346deg);
         text-align: end;
-        margin-top: 14px;
+        margin-top: 30px;
         margin-right: 29px;
     }
     &-buscador{

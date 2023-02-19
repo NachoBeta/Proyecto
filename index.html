@@ -18,10 +18,7 @@
         <header>
             <!-- ENCABEZADO -->
             <div class="header__container">
-                <a href="./index.html"><h1 class="header__container-titulo">DARKO SWEATERS</h1><H4 class="header__container-subtitulo">BY MAURO SERGIO</H4></a>
-                <input class="header__container-buscador" type="text" placeholder="Buscar">
-                <img class="header__container-carrito" src="../scss/vistas/multimedia/carrito.png" alt="carrito"><a href="./multimedia/shopping-cart_icon-icons.com_72552.png"></a>
-            </div>
+                <a href="./index.html"><h1 class="header__container-titulo">DARKO INDUMENTARIA</h1><H4 class="header__container-subtitulo">BY MAURO SERGIO</H4></a>            </div>
             <!-- NAV-BAR -->
             <ul class="nav-contenedor">
                 <li class="nav-contenedor__pestañas">
@@ -35,6 +32,30 @@
                 <li class="nav-contenedor__pestañas">
                     <a class="nav-contenedor__pestañas-link" href="./paginas/chombas.html">CHOMBAS</a>
             </ul>
+            <!-- CARRUSEL -->
+            <section class="carrusel_contenedor">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="../scss/vistas/multimedia/CARUSEL1.jpg" class="d-block w-100" alt="img-carrusel-1">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="../scss/vistas/multimedia/CARUSEL2.jpg" class="d-block w-100" alt="img-carrusel-2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../scss/vistas/multimedia/CARUSEL3.jpg" class="d-block w-100" alt="img-carrusel-3">
+                        </div>
+                    </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                </div>
+            </section>
             <!-- IMAGEN-PRINCIPAL -->
             <div class="contenedor__imagen">
                 <img class="imagen-principal__img" src="../scss/vistas/multimedia/imagen-principal.jpg" alt="imagen-principal">
