@@ -12,11 +12,13 @@
     flex-direction: row;
     flex-wrap: wrap;
     &-titulo{
-        color: #ff008d;
+        -webkit-text-fill-color: #ff568c;
+        -webkit-text-stroke: 1px #ffffff;
         font-family: acme;
-        font-size: 50PX;
+        font-size: 55px;
         transition: 1s;
         padding-right: 5rem;
+        margin-top: 2rem;
         &:hover{
             color: whitesmoke;
             transform: scale(1.2);
@@ -25,11 +27,11 @@
     &-subtitulo{
         color: yellow;
         font-family: Courgette;
-        font-size: 17px;
-        transform: rotate(346deg);
+        font-size: 15px;
+        transform: rotate(350deg);
         text-align: end;
-        margin-top: 30px;
-        margin-right: 29px;
+        margin-top: 14px;
+        margin-right: 8px;
     }
     &-buscador{
         height: 2rem;

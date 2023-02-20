@@ -152,7 +152,7 @@ dl {
     font-size: 7px; } }
 
 .header__container {
-  background-image: url(/scss/vistas/multimedia/background-head.jpg);
+  background-image: url(/scss/vistas/multimedia/backgrounds/background-header.jpg);
   background-size: auto;
   display: flex;
   align-items: center;
@@ -164,12 +164,13 @@ dl {
   flex-direction: row;
   flex-wrap: wrap; }
   .header__container-titulo {
-    margin-top: 2rem;
-    color: orangered;
+    -webkit-text-fill-color: #ff568c;
+    -webkit-text-stroke: 1px #ffffff;
     font-family: acme;
-    font-size: 3rem;
+    font-size: 55px;
     transition: 1s;
-    padding-right: 90px; }
+    padding-right: 5rem;
+    margin-top: 2rem; }
     .header__container-titulo:hover {
       color: whitesmoke;
       transform: scale(1.2); }
@@ -177,10 +178,10 @@ dl {
     color: yellow;
     font-family: Courgette;
     font-size: 15px;
-    transform: rotate(347deg);
+    transform: rotate(350deg);
     text-align: end;
     margin-top: 14px;
-    margin-right: 29px; }
+    margin-right: 8px; }
   .header__container-buscador {
     height: 2rem;
     width: auto;
