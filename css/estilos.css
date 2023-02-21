@@ -57,6 +57,19 @@ dl {
   max-width: 1250px;
   overflow: hidden; }
 
+@media (min-width: 992px) {
+  .navbar-brand {
+    display: none; }
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: center;
+    background-color: #ff558bd1;
+    margin: -10px;
+    font-size: 1rem; } }
+
+@media (max-width: 991px) {
+  .header__container {
+    margin: -80px; } }
+
 @media (max-width: 870px) {
   .contenedor {
     height: 60px;
@@ -157,7 +170,7 @@ dl {
   display: flex;
   align-items: center;
   padding-left: 35px;
-  height: 5rem;
+  height: 8rem;
   align-content: space-around;
   justify-items: center;
   justify-content: space-evenly;
@@ -205,6 +218,9 @@ dl {
       border: 1px solid red;
       color: red;
       font-family: "acme"; }
+
+.navbar {
+  color: red; }
 
 .navbar-toggler {
   transition: 2s;
