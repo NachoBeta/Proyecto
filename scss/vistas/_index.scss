@@ -21,7 +21,7 @@
         margin-left: 1rem;
         &:hover{
             color: #f1079e;
-            transform: scale(1.1);
+            transform: translate3d(0px, -5px, -10px);
          }
     }
     &-subtitulo{
@@ -66,11 +66,15 @@
 // NAVBAR //
 .navbar{
     color: red;
+    // margin-top: 30px;
+    // padding: 0px;
 }
 
 .navbar-toggler{
-    transition: 2s;
-    color: red;
+    &:hover{
+        box-shadow: 0 0px 15px 2px #ff568c;
+    }
+    color: #ff568c;
 }
 .container-fluid{
     background-image: url(/scss/vistas/multimedia/backgrounds/background-header.jpg);
