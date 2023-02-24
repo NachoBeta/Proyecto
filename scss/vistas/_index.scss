@@ -74,7 +74,9 @@
     &:hover{
         box-shadow: 0 0px 15px 2px #ff568c;
     }
-    color: #ff568c;
+    border-color: #4a4a4a;
+    transition: 4s;
+
 }
 .container-fluid{
     background-image: url(/scss/vistas/multimedia/backgrounds/background-header.jpg);

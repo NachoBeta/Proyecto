@@ -57,6 +57,14 @@ dl {
   max-width: 1250px;
   overflow: hidden; }
 
+@media (prefers-reduced-motion: reduce) {
+  .nav-link {
+    transition: 0.3s;
+    color: #141619;
+    font-family: "acme"; }
+    .nav-link:hover {
+      color: #ff568c; } }
+
 @media (min-width: 992px) {
   .navbar-brand {
     display: none;
@@ -136,7 +144,9 @@ dl {
     font-size: 2rem; }
   .navbar-brand .header__container-subtitulo {
     font-size: 8px;
-    transition: 1s; }
+    transition: 1s;
+    margin-top: -2px;
+    margin-right: 55px; }
   .contenedor a {
     font-size: 18px;
     margin-top: -5px; }
@@ -203,9 +213,11 @@ dl {
 @media (max-width: 410px) {
   .navbar-brand .header__container-subtitulo {
     font-size: 7px;
-    margin-right: -20px; }
+    margin-right: -20px;
+    margin-top: -5px; }
   .navbar-brand .header__container-titulo {
-    font-size: 18px; } }
+    font-size: 18px;
+    margin-top: 25px; } }
 
 @media (max-width: 410px) {
   .nuevo {
@@ -281,7 +293,8 @@ dl {
   color: red; }
 
 .navbar-toggler {
-  color: #ff568c; }
+  border-color: #4a4a4a;
+  transition: 4s; }
   .navbar-toggler:hover {
     box-shadow: 0 0px 15px 2px #ff568c; }
 
