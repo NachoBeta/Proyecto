@@ -17,7 +17,7 @@
         font-size: 4rem;
         transition: 1s;
         padding-right: 5rem;
-        margin-top: 3rem;
+        margin-top: 1rem;
         margin-left: 1rem;
         &:hover{
             color: #f1079e;
@@ -65,18 +65,17 @@
 }
 // NAVBAR //
 .navbar{
-    color: red;
-    // margin-top: 30px;
-    // padding: 0px;
+    &-brand{
+        margin-bottom: -40px;
+    }
 }
 
 .navbar-toggler{
     &:hover{
         box-shadow: 0 0px 15px 2px #ff568c;
+        transition: 0.5s;
     }
-    border-color: #4a4a4a;
-    transition: 4s;
-
+    color: #ff568c;
 }
 .container-fluid{
     background-image: url(/scss/vistas/multimedia/backgrounds/background-header.jpg);
@@ -113,6 +112,22 @@
         
     }
     
+}
+.nav-link{
+    justify-content: flex-end;
+    display: flex;
+    &:hover{
+        color: #ffffff;
+        transition: 0.5;
+    }
+}
+
+.navbar-nav .dropdown-menu {
+    position: static;
+    font-family: 'Courgette';
+}
+.dropdown-item{
+    font-size: 10px;
 }
 body {
     line-height: inherit;
