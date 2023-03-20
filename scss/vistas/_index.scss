@@ -17,12 +17,12 @@
         font-size: 4rem;
         transition: 1s;
         padding-right: 5rem;
-        margin-top: 1rem;
+        margin-top: 3rem;
         margin-left: 1rem;
         &:hover{
             color: #f1079e;
             transform: translate3d(0px, -5px, -10px);
-         }
+        }
     }
     &-subtitulo{
         color: black;
@@ -131,6 +131,11 @@
 }
 body {
     line-height: inherit;
+}
+.navbar-brand {
+    margin-bottom: 0;
+    margin-bottom: -30px;
+    margin-top: -25px;
 }
 // IMAGEN-PRINCIPAL//
 .imagen-principal {
