@@ -152,29 +152,30 @@ body {
 // TARJETAS//
 .tarjeta_contenedor{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     background-image: url(/scss/vistas/multimedia/backgrounds/backgrounds-9.jpg);
     background-attachment: fixed;
     background-size: contain;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
     .tarjeta{
-        margin: 80px;
+        margin: 30px 80px;
         background-image: url(/scss/vistas/multimedia/backgrounds/backgrounds-4.jpg);
         background-size: cover;
-        background-position: center;
-        border-radius: 35px;
+        background-position: bottom;
+        border-radius: 15px;
         transition: 1s;
-        border:4px solid darkkhaki;
-
+        
         &:hover{
-            box-shadow: 0 0 50px 12px darkkhaki;
+            box-shadow: 0 0px 30px #fb709c;
         }
 
         &__cuerpo{
             text-align: center;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            flex-wrap: wrap;
 
             &-titulo{
                 font-size: 30px;
@@ -202,7 +203,7 @@ body {
         }
 
     .card-img-top{
-        border-radius: 30px;
+        border-radius: 15px 15px 0px 0px;
         height: 340px;
     }
     }
