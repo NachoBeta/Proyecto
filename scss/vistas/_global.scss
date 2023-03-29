@@ -299,6 +299,13 @@ dl {
     .header__container-subtitulo{
     margin-right: -20px;
     }
+    // tarjetas
+    .tarjeta_contenedor{
+        color: red ;
+    }
+    .tarjeta{
+        margin: 0px 10px 0px 10px;
+    }
 }
 @media (max-width: 410px){
     .navbar-brand .header__container-subtitulo {

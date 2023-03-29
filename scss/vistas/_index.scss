@@ -160,13 +160,14 @@ body {
     flex-wrap: wrap;
     
     .tarjeta{
+        width: 18rem;
         margin: 30px 80px;
         background-image: url(/scss/vistas/multimedia/backgrounds/backgrounds-4.jpg);
         background-size: cover;
         background-position: bottom;
         border-radius: 15px;
         transition: 1s;
-        
+        border: solid 1px #d57ace;
         &:hover{
             box-shadow: 0 0px 30px #fb709c;
         }
@@ -179,20 +180,24 @@ body {
 
             &-titulo{
                 font-size: 30px;
-                color: #ffc107;
+                color: #ff568c;
                 font-family: 'JosefinSans';
                 margin-top: 10px;
             }
             &-texto{
-                padding: 0px 20px 0px 20px;
+                padding: 2px 20px 2px 20px;
                 color: black;
                 margin-bottom: 0rem;
                 font-family: "Kalam-Regular";
+                height: 90px;
+            
             }
             .btn-warning{
                 font-family: 'acme';
                 margin: 20px 30px;
                 transition: 1s;
+                --bs-btn-bg: #ff568c;
+                --bs-btn-border-color: #ed0083;
                 &:hover{
                     color: black;
                     background-color: #ffc107;
@@ -201,6 +206,7 @@ body {
                 }
             }
         }
+        
 
     .card-img-top{
         border-radius: 15px 15px 0px 0px;
