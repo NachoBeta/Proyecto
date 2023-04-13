@@ -217,17 +217,17 @@ body {
 // CARRUSEL //
 .carrusel_contenedor{
 
-    &-titulo{
-        color: greenyellow;
+    &-titulo{   
+        color: #fff;
         text-align: center;
-        background-color: chocolate;
+        background-color: #fa6f9b;
         margin-bottom: 0rem;
         font-family: "ACME";
         font-size: 27px;
         letter-spacing: 6px;
         padding-top: 4px;
-        border-top: 2px solid darkkhaki;
-        border-bottom: 2px solid darkkhaki;
+        border-top: 2px solid #ff8ee7;
+        border-bottom: 2px solid #ff8ee7;
     }
 
     .carouselExampleInterval{
@@ -238,16 +238,16 @@ body {
 // TARJETAS-INSTAGRAM //
 .seguinos__instagram{
     &-titulo{
-        color: greenyellow;
+        color: #fff;
         text-align: center;
-        background-color: chocolate;
+        background-color: #fa6f9b;
         margin-bottom: 0rem;
         font-family: "ACME";
         font-size: 27px;
         letter-spacing: 6px;
         padding-top: 4px;
-        border-top: 2px solid darkkhaki;
-        border-bottom: 2px solid darkkhaki;
+        border-top: 2px solid #ff8ee7;
+        border-bottom: 2px solid #ff8ee7;
     }
     &__tarjeta{
         display: flex;

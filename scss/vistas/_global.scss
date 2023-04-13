@@ -307,6 +307,24 @@ dl {
         margin: 0px 10px 0px 10px;
     }
 }
+@media (max-width: 445px){
+    // TARJETAS
+    .tarjeta_contenedor{
+        .tarjeta{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+                &__cuerpo{
+                    width: 15rem;
+                }
+        }
+        .card-img-top{
+            width: 283px;
+        }
+        
+    }
+    
+}
 @media (max-width: 410px){
     .navbar-brand .header__container-subtitulo {
         font-size: 7px;
